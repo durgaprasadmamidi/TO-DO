@@ -19,9 +19,12 @@ app.listen(port, (req,res) => {
 });
 
 
-const sequelize = new Sequelize('prasad', '1608', {
-    host: 'localhost',
-    dialect: 'postgres'
+const sequelize = new Sequelize( {
+	username : "prasad",
+	password : "1608",
+	database : "postgres",
+    host : "localhost",
+    dialect: "postgres"
 });
 
 sequelize.authenticate()
